@@ -61,9 +61,9 @@ class Wkhtmltopdf(object):
 
     def __init__(self, app=None):
         if app is not None:
-            self._init_app(app)
+            self.init_app(app)
 
-    def _init_app(self, app):
+    def init_app(self, app):
         '''Initalizes the app with Flask-WkHTMLtoPDF.
 
         :param app: The Flask application object.
